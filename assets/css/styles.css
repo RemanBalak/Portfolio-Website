@@ -618,7 +618,7 @@ h1#project {
   outline: none;
   font-size: var(--normal-font-size);
   cursor: pointer;
-  margin-left: auto;
+  margin: 0 auto; /* Set margin to 0 on the top and bottom, and auto on the left and right */
 }
 
 .captcha {
@@ -840,4 +840,66 @@ h1#project {
     max-width: calc(100% - 20px); /* Adjust the percentage and gap as needed */
     margin: 10px; /* Add margin to create vertical gap between project cards */
   }
+}
+/* Code below makes project section of portfolio site fully responsive */
+/* Project card container */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Set a fixed height for each card */
+}
+
+/* Card image */
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card body */
+.card-body {
+  flex-grow: 1; /* Allow the card body to grow vertically */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card title and text */
+.card-title {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  flex-grow: 1; /* Allow text to expand vertically */
+  margin-bottom: 1rem;
+}
+
+/* Button container (added div to group buttons) */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto; /* Push buttons to the bottom */
+}
+
+/* Project buttons */
+.cssbuttons-io {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+  margin-top: 10px;
+  text-align: center;
+  padding: 0.25rem 1rem;
+  transition: transform 0.2s;
+}
+
+.cssbuttons-io:hover {
+  cursor: pointer;
+  transform: scale(1.05); /* Add a slight hover effect */
 }
