@@ -144,7 +144,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #bc1b1b;
+  background-color: #333;
   box-shadow: 0 1px 4px rgba(36, 119, 201, 0.15);
 }
 
@@ -707,7 +707,7 @@ h1#project {
     display: none;
   }
   .nav_link {
-    color: var(--second-color);
+    color: var(--first-color);
   }
 
   .home {
@@ -902,4 +902,19 @@ h1#project {
 .cssbuttons-io:hover {
   cursor: pointer;
   transform: scale(1.05); /* Add a slight hover effect */
+}
+
+/* Makes text visible when light mode is toggled on */
+
+.card.light-mode {
+  color: white; /* Text color in light mode */
+}
+
+.card.light-mode:hover {
+  color: #171c28;
+}
+
+/* Prevents projects card color change to black in dark mode */
+body.dark .card.light-mode:hover {
+  color: white;
 }
