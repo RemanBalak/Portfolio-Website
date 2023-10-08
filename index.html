@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Reman Balak</title>
+    <link rel="icon" href="/assets/img/icon.png" />
+  </head>
+
+  <body>
+    <!--Intro animation-->
+    <!-- <div class="intro">
+      <h1 class="logo-header">
+        <span class="logo">H</span><span class="logo">e</span
+        ><span class="logo">l</span><span class="logo">l</span
+        ><span class="logo">o</span>
+      </h1>
+    </div> -->
+
+    <div id="particles-js"></div>
+
+    <header class="l-header" id="head">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav_logo">
+            <img src="/assets/img/favicon.png" alt="" />
+          </a>
+        </div>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list" id="navlist">
+            <li class="nav_item">
+              <a href="#home" class="nav_link active">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">About</a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">Skills</a>
+            </li>
+            <li class="nav_item">
+              <a href="#work" class="nav_link">Projects</a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">Contact</a>
+            </li>
+
+            <!--Dark mode toggle-->
+            <div class="toggle-container">
+              <input type="checkbox" id="toggle" name="toggle" />
+              <label class="lab" for="toggle"
+                ><i class="bx bxs-moon"></i
+              ></label>
+            </div>
+          </ul>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!-- HOME -->
+      <section class="home bd-grid" id="home">
+        <div class="home_data">
+          <h1 class="home_title">
+            Hi, <br />
+            I'm <span class="home_title-color">Reman</span><br />
+            <span id="autoWrite"></span>
+          </h1>
+
+          <a
+            href="assets/files/BalakReman-resume v2.pdf"
+            download="BalakReman-resume.pdf"
+            class="button"
+            >Download Resume</a
+          >
+        </div>
+
+        <div class="home_social">
+          <a
+            href="https://www.linkedin.com/in/remanbalak/"
+            target="_blank"
+            class="home_social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/RemanBalak"
+            target="_blank"
+            class="home_social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.reddit.com/user/remanbalak"
+            target="_blank"
+            class="home_social-icon"
+            ><i class="bx bxl-reddit skills_icon"></i>
+          </a>
+        </div>
+
+        <div class="home_img">
+          <img src="/assets/img/me.png" alt="" />
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about_container bd-grid">
+          <div class="about_img">
+            <img src="/assets/img/about.jpeg" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about_subtitle">Hi !</h2>
+            <p class="about_text">
+              My name is Reman. I am a full-stack developer based in Cologne,
+              Germany. I love combining the worlds of logic and creative design
+              to make eye-catching, accessible, and user-friendly websites and
+              applications. I'm passionate about what I do and bring a positive
+              can-do attitude to every project. When I'm not working on
+              projects, I like to read books, play chess and exercise to keep
+              fit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills_container bd-grid">
+          <div>
+            <div class="skills_data">
+              <div class="skills_names">
+                <i class="bx bxl-html5 skills_icon"></i>
+                <span class="skills_name">HTML5</span>
+              </div>
+              <div class="skills_bar skills_"></div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills_names">
+                <i class="bx bxl-javascript skills_icon"></i>
+                <span class="skills_name">Javascript</span>
+              </div>
+              <div class="skills_bar skills_"></div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_names">
+                <i class="bx bxl-git skills_icon"></i>
+                <span class="skills_name">Git</span>
+              </div>
+              <div class="skills_bar skills_"></div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills_names">
+                <i class="bx bxl-react skills_icon"></i>
+                <span class="skills_name">React</span>
+              </div>
+              <div class="skills_bar skills_"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="skills_data">
+              <div class="skills_names">
+                <i class="bx bxl-css3 skills_icon"></i>
+
+                <span class="skills_name">CSS3</span>
+              </div>
+              <div class="skills_bar skills_"></div>
+            </div>
+
+            <div class="skills_data">
+              <div class="skills_names">
+                <i class="bx bxl-nodejs skills_icon"></i>
+                <span class="skills_name">Node.js</span>
+              </div>
+              <div class="skills_bar skills_"></div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_names">
+                <i class="bx bxl-bootstrap skills_icon"></i>
+                <span class="skills_name">Bootstrap</span>
+              </div>
+              <div class="skills_bar skills_"></div>
+            </div>
+            <div class="skills_data">
+              <div class="skills_names">
+                <i class="bx bxl-mongodb skills_icon"></i>
+                <span class="skills_name">MongoDB</span>
+              </div>
+              <div class="skills_bar skills_"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <br /><br /><br /><br />
+      <!-- PROJECTS -->
+      <h2 class="section-title">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="card">
+            <img
+              src="assets/img/pokedex-homescreen.png"
+              class="card-img-top"
+              alt="Image of Pokédex homepage"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Pokédex App</h4>
+              <p class="card-text">
+                Within this project I built a small web application with HTML,
+                CSS, and JavaScript that loads data from an external API and
+                enables the viewing of data (pokemons) in detail.
+              </p>
+              <a
+                href="https://github.com/RemanBalak/pokedex-app"
+                target="_blank"
+              >
+                <button class="cssbuttons-io">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 24 24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                      ></path>
+                    </svg>
+                    See Project code</span
+                  >
+                </button>
+              </a>
+              <a
+                href="https://remanbalak.github.io/pokedex-app/"
+                target="_blank"
+              >
+                <button class="cssbuttons-io">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 24 24"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path
+                        fill="currentColor"
+                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                      ></path>
+                    </svg>
+                    Live App</span
+                  >
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="assets/img/cinevibe homescreen.png"
+              class="card-img-top"
+              alt="Image of CineVibe signup screen"
+            />
+            <div class="card-body">
+              <h4 class="card-title">CineVibe</h4>
+              <p class="card-text">
+                A web app that provides users with access to information about
+                movies, directors, and genres. Users can sign up, update
+                personal data, and create a list of favorites. Server-side and
+                client-side were developed using the MERN stack.
+              </p>
+              <a
+                class="project__card--button btn btn-primary"
+                href="https://github.com/RemanBalak/myFlix-client-main"
+                target="_blank"
+                >See project on GitHub</a
+              >
+              <a
+                class="project__card--button btn btn-secondary"
+                target="_blank"
+                href="https://cinevibe.netlify.app/signup"
+                >See CineVibe</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="assets/img/Meetapp-screenshot.png"
+              class="card-img-top"
+              alt="Image of Meet App homepage"
+            />
+            <div class="card-body">
+              <h4 class="card-title">MeetUp</h4>
+              <p class="card-text">
+                A serverless, progressive web app (PWA) built with React using a
+                test-driven development technique (TDD). The app uses the Meetup
+                API to fetch upcoming events for a selected city, and OAuth2
+                authentication flow. For the authorization server it uses AWS
+                Lambda.
+              </p>
+              <a
+                class="project__card--button btn btn-primary"
+                href="https://github.com/RemanBalak/MeetUp"
+                target="_blank"
+                >See project on GitHub</a
+              >
+              <a
+                class="project__card--button btn btn-secondary"
+                target="_blank"
+                href="https://remanbalak.github.io/meet/"
+                >See MeetUp</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="assets/img/recipehub-home.png"
+              class="card-img-top"
+              alt="Image of RecipeHub mainpage"
+            />
+            <div class="card-body">
+              <h4 class="card-title">RecipeHub</h4>
+              <p class="card-text">
+                RecipeHub, a Python and Django web app, simplifies recipe
+                discovery, creation, and viewing Admins have access to a
+                powerful dashboard for managing the recipe database. The
+                application is securely hosted on Heroku, with its data stored
+                in an SQL database.
+              </p>
+              <a
+                class="project__card--button btn btn-primary"
+                href="https://github.com/RemanBalak/recipe-app"
+                target="_blank"
+                >See project on GitHub
+              </a>
+              <a
+                class="project__card--button btn btn-secondary"
+                href="https://recipehub-f3766f54da15.herokuapp.com/"
+                target="_blank"
+                >See RecipeHub
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="assets/img/chatapp-image.png"
+              class="card-img-top"
+              alt="Image ChatApp homescreen"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Chatify</h4>
+              <p class="card-text">
+                A chat app for mobile devices built with React-Native. It
+                provides users with a chat interface where they can send/receive
+                text messages and images as well as share their location.
+              </p>
+              <a
+                class="project__card--button btn btn-primary"
+                href="https://github.com/RemanBalak/Chatify"
+                target="_blank"
+                >See project on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="assets/img/movie-api.png"
+              class="card-img-top movieapi-image"
+              alt="Image of movie
+          API"
+            />
+            <div class="card-body">
+              <h4 class="card-title">Movie API</h4>
+              <p class="card-text">
+                The complete server-side of the CineVibe application, including
+                the server, business logic, and business layers of the
+                application. It consists of a well-designed REST API and
+                architected database built using JavaScript, Node.js, Express,
+                and MongoDB.
+              </p>
+              <a
+                class="project__card--button btn btn-primary"
+                href="https://github.com/RemanBalak/movie_api-main"
+                target="_blank"
+                >See project on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact_container bd-grid">
+          <form
+            name="contact"
+            method="POST"
+            class="contact_form"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="contact_input"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="contact_input"
+              required
+            />
+            <textarea
+              name="text"
+              placeholder="Message"
+              id=""
+              cols="0"
+              rows="10"
+              class="contact_input"
+              required
+            ></textarea>
+
+            <div
+              data-netlify-recaptcha="true"
+              class="contact_input captcha"
+            ></div>
+
+            <input type="submit" value="Send" class="contact_button button" />
+          </form>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <p class="footer_title">Reman</p>
+        <div class="footer_social">
+          <a href="https://www.linkedin.com/in/remanbalak/" class="footer_icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/RemanBalak" class="footer_icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.reddit.com/user/remanbalak" class="footer_icon"
+            ><i class="bx bxl-reddit"></i
+          ></a>
+        </div>
+        <p>&#169; 2021 copyright all rights reserved</p>
+        <br />
+        <p><a href="impressum.html">Impressum</a></p>
+      </footer>
+    </main>
+
+    <!-- Scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Autowriter -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!-- Particles -->
+    <script src="./assets/js/particles.js"></script>
+
+    <!-- Javascript -->
+    <script src=" /assets/js/app.js"></script>
+  </body>
+</html>
