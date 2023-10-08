@@ -47,7 +47,7 @@
               <a href="#skills" class="nav_link">Skills</a>
             </li>
             <li class="nav_item">
-              <a href="#work" class="nav_link">Projects</a>
+              <a href="#projects" class="nav_link">Projects</a>
             </li>
             <li class="nav_item">
               <a href="#contact" class="nav_link">Contact</a>
@@ -78,12 +78,17 @@
             I'm <span class="home_title-color">Reman</span><br />
             <span id="autoWrite"></span>
           </h1>
-
+          <a href="#projects">
+            <button class="cssbuttons-io">
+              <span> Check out some of my code</span>
+            </button>
+          </a>
           <a
             href="assets/files/BalakReman-resume v2.pdf"
             download="BalakReman-resume.pdf"
-            class="button"
-            >Download Resume</a
+            ><button class="cssbuttons-io">
+              <span> Download Resume</span>
+            </button></a
           >
         </div>
 
@@ -125,13 +130,13 @@
           <div>
             <h2 class="about_subtitle">Hi !</h2>
             <p class="about_text">
-              My name is Reman. I am a full-stack developer based in Cologne,
+              I'm a code enthusiast and full-stack developer based in Cologne,
               Germany. I love combining the worlds of logic and creative design
-              to make eye-catching, accessible, and user-friendly websites and
+              to create eye-catching, accessible, and user-friendly websites and
               applications. I'm passionate about what I do and bring a positive
-              can-do attitude to every project. When I'm not working on
-              projects, I like to read books, play chess and exercise to keep
-              fit.
+              can-do attitude to every project. When I'm not immersed in coding,
+              I enjoy reading books, playing chess, and maintaining a healthy
+              lifestyle through regular exercise.
             </p>
           </div>
         </div>
@@ -211,210 +216,315 @@
       <br />
       <br />
       <br /><br /><br /><br />
+
       <!-- PROJECTS -->
-      <h2 class="section-title">Projects</h2>
-      <div class="row">
-        <div class="col-md-4 col-sm-6">
-          <div class="card">
-            <img
-              src="assets/img/pokedex-homescreen.png"
-              class="card-img-top"
-              alt="Image of Pokédex homepage"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Pokédex App</h4>
-              <p class="card-text">
-                Within this project I built a small web application with HTML,
-                CSS, and JavaScript that loads data from an external API and
-                enables the viewing of data (pokemons) in detail.
-              </p>
-              <a
-                href="https://github.com/RemanBalak/pokedex-app"
-                target="_blank"
-              >
-                <button class="cssbuttons-io">
-                  <span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 24 24"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path
-                        fill="currentColor"
-                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                      ></path>
-                    </svg>
-                    See Project code</span
-                  >
-                </button>
-              </a>
-              <a
-                href="https://remanbalak.github.io/pokedex-app/"
-                target="_blank"
-              >
-                <button class="cssbuttons-io">
-                  <span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewbox="0 0 24 24"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path
-                        fill="currentColor"
-                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                      ></path>
-                    </svg>
-                    Live App</span
-                  >
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="assets/img/cinevibe homescreen.png"
-              class="card-img-top"
-              alt="Image of CineVibe signup screen"
-            />
-            <div class="card-body">
-              <h4 class="card-title">CineVibe</h4>
-              <p class="card-text">
-                A web app that provides users with access to information about
-                movies, directors, and genres. Users can sign up, update
-                personal data, and create a list of favorites. Server-side and
-                client-side were developed using the MERN stack.
-              </p>
-              <a
-                class="project__card--button btn btn-primary"
-                href="https://github.com/RemanBalak/myFlix-client-main"
-                target="_blank"
-                >See project on GitHub</a
-              >
-              <a
-                class="project__card--button btn btn-secondary"
-                target="_blank"
-                href="https://cinevibe.netlify.app/signup"
-                >See CineVibe</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="assets/img/Meetapp-screenshot.png"
-              class="card-img-top"
-              alt="Image of Meet App homepage"
-            />
-            <div class="card-body">
-              <h4 class="card-title">MeetUp</h4>
-              <p class="card-text">
-                A serverless, progressive web app (PWA) built with React using a
-                test-driven development technique (TDD). The app uses the Meetup
-                API to fetch upcoming events for a selected city, and OAuth2
-                authentication flow. For the authorization server it uses AWS
-                Lambda.
-              </p>
-              <a
-                class="project__card--button btn btn-primary"
-                href="https://github.com/RemanBalak/MeetUp"
-                target="_blank"
-                >See project on GitHub</a
-              >
-              <a
-                class="project__card--button btn btn-secondary"
-                target="_blank"
-                href="https://remanbalak.github.io/meet/"
-                >See MeetUp</a
-              >
-            </div>
-          </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="assets/img/recipehub-home.png"
-              class="card-img-top"
-              alt="Image of RecipeHub mainpage"
-            />
-            <div class="card-body">
-              <h4 class="card-title">RecipeHub</h4>
-              <p class="card-text">
-                RecipeHub, a Python and Django web app, simplifies recipe
-                discovery, creation, and viewing Admins have access to a
-                powerful dashboard for managing the recipe database. The
-                application is securely hosted on Heroku, with its data stored
-                in an SQL database.
-              </p>
-              <a
-                class="project__card--button btn btn-primary"
-                href="https://github.com/RemanBalak/recipe-app"
-                target="_blank"
-                >See project on GitHub
-              </a>
-              <a
-                class="project__card--button btn btn-secondary"
-                href="https://recipehub-f3766f54da15.herokuapp.com/"
-                target="_blank"
-                >See RecipeHub
-              </a>
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="assets/img/pokedex-homescreen.png"
+                class="card-img-top"
+                alt="Image of Pokédex homepage"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Pokédex App</h4>
+                <p class="card-text">
+                  Within this project I built a small web application with HTML,
+                  CSS, and JavaScript that loads data from an external API and
+                  enables the viewing of data (pokemons) in detail.
+                </p>
+                <a
+                  href="https://github.com/RemanBalak/pokedex-app"
+                  target="_blank"
+                >
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      See Project code</span
+                    >
+                  </button>
+                </a>
+                <a
+                  href="https://remanbalak.github.io/pokedex-app/"
+                  target="_blank"
+                >
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      Live App</span
+                    >
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="assets/img/chatapp-image.png"
-              class="card-img-top"
-              alt="Image ChatApp homescreen"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Chatify</h4>
-              <p class="card-text">
-                A chat app for mobile devices built with React-Native. It
-                provides users with a chat interface where they can send/receive
-                text messages and images as well as share their location.
-              </p>
-              <a
-                class="project__card--button btn btn-primary"
-                href="https://github.com/RemanBalak/Chatify"
-                target="_blank"
-                >See project on GitHub</a
-              >
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="assets/img/cinevibe homescreen.png"
+                class="card-img-top"
+                alt="Image of CineVibe signup screen"
+              />
+              <div class="card-body">
+                <h4 class="card-title">CineVibe</h4>
+                <p class="card-text">
+                  A web app that provides users with access to information about
+                  movies, directors, and genres. Users can sign up, update
+                  personal data, and create a list of favorites. Server-side and
+                  client-side were developed using the MERN stack.
+                </p>
+                <a
+                  href="https://github.com/RemanBalak/myFlix-client-main"
+                  target="_blank"
+                >
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      See Project code</span
+                    >
+                  </button>
+                </a>
+                <a target="_blank" href="https://cinevibe.netlify.app/signup">
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      Live App</span
+                    >
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="assets/img/Meetapp-screenshot.png"
+                class="card-img-top"
+                alt="Image of Meet App homepage"
+              />
+              <div class="card-body">
+                <h4 class="card-title">MeetUp</h4>
+                <p class="card-text">
+                  A serverless, progressive web app (PWA) built with React using
+                  a test-driven development technique (TDD). The app uses the
+                  Meetup API to fetch upcoming events for a selected city, and
+                  OAuth2 authentication flow. For the authorization server it
+                  uses AWS Lambda.
+                </p>
+                <a href="https://github.com/RemanBalak/MeetUp" target="_blank">
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      See Project code</span
+                    >
+                  </button>
+                </a>
+                <a target="_blank" href="https://remanbalak.github.io/meet/">
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      Live App</span
+                    >
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
 
-        <div class="col-md-4">
-          <div class="card">
-            <img
-              src="assets/img/movie-api.png"
-              class="card-img-top movieapi-image"
-              alt="Image of movie
-          API"
-            />
-            <div class="card-body">
-              <h4 class="card-title">Movie API</h4>
-              <p class="card-text">
-                The complete server-side of the CineVibe application, including
-                the server, business logic, and business layers of the
-                application. It consists of a well-designed REST API and
-                architected database built using JavaScript, Node.js, Express,
-                and MongoDB.
-              </p>
-              <a
-                class="project__card--button btn btn-primary"
-                href="https://github.com/RemanBalak/movie_api-main"
-                target="_blank"
-                >See project on GitHub</a
-              >
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="assets/img/recipehub-home.png"
+                class="card-img-top"
+                alt="Image of RecipeHub mainpage"
+              />
+              <div class="card-body">
+                <h4 class="card-title">RecipeHub</h4>
+                <p class="card-text">
+                  RecipeHub, a Python and Django web app, simplifies recipe
+                  discovery, creation, and viewing Admins have access to a
+                  powerful dashboard for managing the recipe database. The
+                  application is securely hosted on Heroku, with its data stored
+                  in an SQL database.
+                </p>
+                <a
+                  href="https://github.com/RemanBalak/recipe-app"
+                  target="_blank"
+                >
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      See Project code</span
+                    >
+                  </button>
+                </a>
+                <a
+                  href="https://recipehub-f3766f54da15.herokuapp.com/"
+                  target="_blank"
+                >
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      Live App</span
+                    >
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="assets/img/chatapp-image.png"
+                class="card-img-top"
+                alt="Image ChatApp homescreen"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Chatify</h4>
+                <p class="card-text">
+                  A chat app for mobile devices built with React-Native. It
+                  provides users with a chat interface where they can
+                  send/receive text messages and images as well as share their
+                  location.
+                </p>
+                <a href="https://github.com/RemanBalak/Chatify" target="_blank">
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      See Project code</span
+                    >
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="assets/img/movie-api.png"
+                class="card-img-top movieapi-image"
+                alt="Image of movie
+              API"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Movie API</h4>
+                <p class="card-text">
+                  The complete server-side of the CineVibe application,
+                  including the server, business logic, and business layers of
+                  the application. It consists of a well-designed REST API and
+                  architected database built using JavaScript, Node.js, Express,
+                  and MongoDB.
+                </p>
+                <a
+                  href="https://github.com/RemanBalak/movie_api-main"
+                  target="_blank"
+                >
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewbox="0 0 24 24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      See Project code</span
+                    >
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- CONTACT -->
       <section class="contact section" id="contact">
@@ -463,7 +573,6 @@
 
       <!-- footer -->
       <footer class="footer">
-        <p class="footer_title">Reman</p>
         <div class="footer_social">
           <a href="https://www.linkedin.com/in/remanbalak/" class="footer_icon"
             ><i class="bx bxl-linkedin"></i
