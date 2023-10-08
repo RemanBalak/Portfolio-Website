@@ -6,6 +6,6 @@ Made using:
 
 - HTML
 - CSS
-- JAVASCRIPT
+- Javascript
 
 Live site [here](https://remanbalakdev.com/)
