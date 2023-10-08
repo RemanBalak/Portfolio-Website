@@ -1,12 +1,11 @@
 <h2>Portfolio</h1>
 
-This is my portfolio page source code. Feel free to PM me.
+Welcome to my portfolio site !
 
-I made it using:
-  - HTML
-  - CSS
-  - JAVASCRIPT
-  - Boxicons - https://boxicons.com/
-  - Scroll reveal - https://scrollrevealjs.org/
+Made using:
 
-You can see the site [here](https://www.safetpojskic.com)
+- HTML
+- CSS
+- JAVASCRIPT
+
+Live site [here](https://remanbalakdev.com/)
