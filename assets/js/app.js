@@ -105,3 +105,67 @@ document.getElementById('head').classList.toggle('dark');
 
 /*Particles.js*/
 particlesJS.load('particles-js', 'assets/particles.json');
+
+// javascript contact form validation
+function validateName(input) {
+  const nameError = document.getElementById('nameError');
+  const nameValue = input.value.trim();
+
+  if (nameValue.length < 2) {
+    nameError.textContent = 'Name must be at least 2 characters';
+    nameError.classList.remove('valid');
+  } else {
+    nameError.textContent = '✓';
+    nameError.classList.add('valid');
+  }
+}
+
+function validateEmail(input) {
+  const emailError = document.getElementById('emailError');
+  const emailValue = input.value.trim();
+
+  if (!emailValue.includes('@') || !emailValue.includes('.')) {
+    emailError.textContent = 'Enter a valid email address';
+    emailError.classList.remove('valid');
+  } else {
+    emailError.textContent = '✓';
+    emailError.classList.add('valid');
+  }
+}
+
+function validateMessage(input) {
+  const messageError = document.getElementById('messageError');
+  const messageValue = input.value.trim();
+
+  if (messageValue.length < 5) {
+    messageError.textContent = 'Message must be at least 5 characters';
+    messageError.classList.remove('valid');
+  } else {
+    messageError.textContent = '✓';
+    messageError.classList.add('valid');
+  }
+}
+
+function validateForm() {
+  const nameInput = document.querySelector('input[name="name"]');
+  const emailInput = document.querySelector('input[name="email"]');
+  const messageInput = document.querySelector('textarea[name="text"]');
+
+  validateName(nameInput);
+  validateEmail(emailInput);
+  validateMessage(messageInput);
+
+  const nameError = document.getElementById('nameError');
+  const emailError = document.getElementById('emailError');
+  const messageError = document.getElementById('messageError');
+
+  if (
+    !nameError.classList.contains('valid') ||
+    !emailError.classList.contains('valid') ||
+    !messageError.classList.contains('valid')
+  ) {
+    return false; // Prevent form submission if there are errors
+  }
+
+  return true;
+}

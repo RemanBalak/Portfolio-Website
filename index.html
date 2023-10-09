@@ -12,18 +12,18 @@
       rel="stylesheet"
     />
     <title>Reman Balak</title>
-    <link rel="icon" href="/assets/img/icon.png" />
+    <link rel="icon" href="/assets/img/favicon.png" />
   </head>
 
   <body>
-    <!--Intro animation-->
-    <!-- <div class="intro">
+    <!-- Intro animation-->
+    <div class="intro">
       <h1 class="logo-header">
         <span class="logo">H</span><span class="logo">e</span
         ><span class="logo">l</span><span class="logo">l</span
         ><span class="logo">o</span>
       </h1>
-    </div> -->
+    </div>
 
     <div id="particles-js"></div>
 
@@ -109,7 +109,7 @@
             href="https://www.reddit.com/user/remanbalak"
             target="_blank"
             class="home_social-icon"
-            ><i class="bx bxl-reddit skills_icon"></i>
+            ><i class="bx bxl-reddit"></i>
           </a>
         </div>
 
@@ -148,73 +148,66 @@
       <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
         <div class="skills_container bd-grid">
-          <div>
-            <div class="skills_data">
-              <div class="skills_names">
-                <i class="bx bxl-html5 skills_icon"></i>
-                <span class="skills_name">HTML5</span>
-              </div>
-              <div class="skills_bar skills_"></div>
+          <div class="skills_data">
+            <div class="skills_names">
+              <i class="bx bxl-html5 skills_icon"></i>
+              <span class="skills_name">HTML5</span>
             </div>
 
-            <div class="skills_data">
-              <div class="skills_names">
-                <i class="bx bxl-javascript skills_icon"></i>
-                <span class="skills_name">Javascript</span>
-              </div>
-              <div class="skills_bar skills_"></div>
-            </div>
-            <div class="skills_data">
-              <div class="skills_names">
-                <i class="bx bxl-git skills_icon"></i>
-                <span class="skills_name">Git</span>
-              </div>
-              <div class="skills_bar skills_"></div>
-            </div>
-
-            <div class="skills_data">
-              <div class="skills_names">
-                <i class="bx bxl-react skills_icon"></i>
-                <span class="skills_name">React</span>
-              </div>
-              <div class="skills_bar skills_"></div>
-            </div>
+            <div class="skills_bar skills_"></div>
           </div>
-
-          <div>
-            <div class="skills_data">
-              <div class="skills_names">
-                <i class="bx bxl-css3 skills_icon"></i>
-
-                <span class="skills_name">CSS3</span>
-              </div>
-              <div class="skills_bar skills_"></div>
+          <div class="skills_data">
+            <div class="skills_names">
+              <i class="bx bxl-javascript skills_icon"></i>
+              <span class="skills_name">Javascript</span>
             </div>
-
-            <div class="skills_data">
-              <div class="skills_names">
-                <i class="bx bxl-nodejs skills_icon"></i>
-                <span class="skills_name">Node.js</span>
-              </div>
-              <div class="skills_bar skills_"></div>
+            <div class="skills_bar skills_"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_names">
+              <i class="bx bxl-git skills_icon"></i>
+              <span class="skills_name">Git</span>
             </div>
-            <div class="skills_data">
-              <div class="skills_names">
-                <i class="bx bxl-bootstrap skills_icon"></i>
-                <span class="skills_name">Bootstrap</span>
-              </div>
-              <div class="skills_bar skills_"></div>
+            <div class="skills_bar skills_"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_names">
+              <i class="bx bxl-react skills_icon"></i>
+              <span class="skills_name">React</span>
             </div>
-            <div class="skills_data">
-              <div class="skills_names">
-                <i class="bx bxl-mongodb skills_icon"></i>
-                <span class="skills_name">MongoDB</span>
-              </div>
-              <div class="skills_bar skills_"></div>
+            <div class="skills_bar skills_"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_names">
+              <i class="bx bxl-css3 skills_icon"></i>
+              <span class="skills_name">CSS3</span>
             </div>
+            <div class="skills_bar skills_"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_names">
+              <i class="bx bxl-nodejs skills_icon"></i>
+              <span class="skills_name">Node.js</span>
+            </div>
+            <div class="skills_bar skills_"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_names">
+              <i class="bx bxl-bootstrap skills_icon"></i>
+              <span class="skills_name">Bootstrap</span>
+            </div>
+            <div class="skills_bar skills_"></div>
+          </div>
+          <div class="skills_data">
+            <div class="skills_names">
+              <i class="bx bxl-mongodb skills_icon"></i>
+              <span class="skills_name">MongoDB</span>
+            </div>
+            <div class="skills_bar skills_"></div>
           </div>
         </div>
       </section>
+
       <br />
       <br />
       <br /><br /><br /><br />
@@ -536,45 +529,60 @@
         <h2 class="section-title">Contact</h2>
         <div class="contact_container bd-grid">
           <form
+            action="https://formspree.io/f/mayglrng"
             name="contact"
             method="POST"
             class="contact_form"
             data-netlify="true"
             data-netlify-recaptcha="true"
+            onsubmit="return validateForm()"
           >
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              class="contact_input"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              class="contact_input"
-              required
-            />
-            <textarea
-              name="text"
-              placeholder="Message"
-              id=""
-              cols="0"
-              rows="10"
-              class="contact_input"
-              required
-            ></textarea>
-
-            <div
-              data-netlify-recaptcha="true"
-              class="contact_input captcha"
-            ></div>
+            <div class="input-container">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                class="contact_input"
+                required
+                oninput="validateName(this)"
+              />
+              <div class="validation-icon" id="nameValidation">
+                <span class="error" id="nameError"></span>
+              </div>
+            </div>
+            <div class="input-container">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="contact_input"
+                required
+                oninput="validateEmail(this)"
+              />
+              <div class="validation-icon" id="emailValidation">
+                <span class="error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="input-container">
+              <textarea
+                name="text"
+                placeholder="Message"
+                id=""
+                cols="0"
+                rows="10"
+                class="contact_input"
+                required
+                oninput="validateMessage(this)"
+              ></textarea>
+              <div class="validation-icon" id="messageValidation">
+                <span class="error" id="messageError"></span>
+              </div>
+            </div>
 
             <input
               type="submit"
               value="Send"
-              class="cssbuttons-io contact_button button"
+              class="cssbuttons-io contact_button"
             />
           </form>
         </div>
