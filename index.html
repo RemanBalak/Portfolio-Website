@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Reman Balak – Full-Stack Web Developer based in Cologne, Germany."
+    />
+    <title>Reman Balak</title>
+
+    <link rel="icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- Icons -->
@@ -11,12 +18,10 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>Reman Balak</title>
-    <link rel="icon" href="/assets/img/favicon.png" />
   </head>
 
   <body>
-    <!-- Intro animation-->
+    <!-- Intro animation -->
     <div class="intro">
       <h1 class="logo-header">
         <span class="logo">W</span><span class="logo">e</span
@@ -31,8 +36,8 @@
     <header class="l-header" id="head">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav_logo">
-            <img src="/assets/img/favicon.png" alt="" />
+          <a href="#home" class="nav_logo">
+            <img src="assets/img/favicon.png" alt="Reman Balak logo" />
           </a>
         </div>
 
@@ -54,17 +59,19 @@
               <a href="#contact" class="nav_link">Contact</a>
             </li>
 
-            <!--Dark mode toggle-->
-            <div class="toggle-container">
-              <input type="checkbox" id="toggle" name="toggle" />
-              <label class="lab" for="toggle"
-                ><i class="bx bxs-moon"></i
-              ></label>
-            </div>
+            <!-- Dark mode toggle (inside an <li>, since a <ul> may only contain <li>) -->
+            <li>
+              <div class="toggle-container">
+                <input type="checkbox" id="toggle" name="toggle" />
+                <label class="lab" for="toggle" aria-label="Toggle dark mode"
+                  ><i class="bx bxs-moon"></i
+                ></label>
+              </div>
+            </li>
           </ul>
         </div>
 
-        <div class="nav_toggle" id="nav-toggle">
+        <div class="nav_toggle" id="nav-toggle" aria-label="Open menu">
           <i class="bx bx-menu"></i>
         </div>
       </nav>
@@ -85,7 +92,7 @@
             </button>
           </a>
           <a
-            href="assets/files/BalakReman-resume v2.pdf"
+            href="assets/files/BalakReman-resume_v2.pdf"
             download="BalakReman-resume.pdf"
             ><button class="cssbuttons-io">
               <span> Download Resume</span>
@@ -97,25 +104,31 @@
           <a
             href="https://www.linkedin.com/in/remanbalak/"
             target="_blank"
+            rel="noopener noreferrer"
             class="home_social-icon"
+            aria-label="LinkedIn"
             ><i class="bx bxl-linkedin"></i
           ></a>
           <a
             href="https://github.com/RemanBalak"
             target="_blank"
+            rel="noopener noreferrer"
             class="home_social-icon"
+            aria-label="GitHub"
             ><i class="bx bxl-github"></i
           ></a>
           <a
             href="https://www.reddit.com/user/remanbalak"
             target="_blank"
+            rel="noopener noreferrer"
             class="home_social-icon"
-            ><i class="bx bxl-reddit"></i>
-          </a>
+            aria-label="Reddit"
+            ><i class="bx bxl-reddit"></i
+          ></a>
         </div>
 
         <div class="home_img">
-          <img src="/assets/img/me.png" alt="" />
+          <img src="assets/img/me.png" alt="Portrait of Reman Balak" />
         </div>
       </section>
 
@@ -125,7 +138,7 @@
 
         <div class="about_container bd-grid">
           <div class="about_img">
-            <img src="/assets/img/about.jpeg" alt="" />
+            <img src="assets/img/about.jpeg" alt="Reman Balak sitting at a café" />
           </div>
 
           <div>
@@ -154,7 +167,6 @@
               <i class="bx bxl-html5 skills_icon"></i>
               <span class="skills_name">HTML5</span>
             </div>
-
             <div class="skills_bar skills_"></div>
           </div>
           <div class="skills_data">
@@ -214,10 +226,10 @@
       <br /><br /><br /><br />
 
       <!-- PROJECTS -->
-
       <section class="projects section" id="projects">
         <h2 class="section-title">Projects</h2>
         <div class="row">
+          <!-- Pokédex -->
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card light-mode">
               <img
@@ -235,13 +247,11 @@
                 <a
                   href="https://remanbalak.github.io/pokedex-app/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -255,13 +265,11 @@
                 <a
                   href="https://github.com/RemanBalak/pokedex-app"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -273,15 +281,13 @@
                   </button>
                 </a>
                 <a
-                  href="assets/files/Case Study for Pokédex project.pdf"
+                  href="assets/files/Case_Study_for_Poke_dex_project.pdf"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -295,12 +301,14 @@
               </div>
             </div>
           </div>
+
+          <!-- CineVibe -->
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card light-mode">
               <img
-                src="assets/img/cinevibe homescreen.png"
+                src="assets/img/cinevibe_homescreen.png"
                 class="card-img-top"
-                alt="Image of CineVibe signup screen"
+                alt="Image of CineVibe home screen"
               />
               <div class="card-body">
                 <h4 class="card-title">CineVibe</h4>
@@ -310,14 +318,14 @@
                   personal data, and create a list of favorites. Server-side and
                   client-side were developed using the MERN stack.
                 </p>
-
-                <a target="_blank" href="https://cinevibe.netlify.app/signup">
+                <a
+                  href="https://cinevibe.netlify.app/signup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -331,13 +339,11 @@
                 <a
                   href="https://github.com/RemanBalak/myFlix-client-main"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -351,6 +357,8 @@
               </div>
             </div>
           </div>
+
+          <!-- MeetUp -->
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card light-mode">
               <img
@@ -367,14 +375,14 @@
                   OAuth2 authentication flow. For the authorization server it
                   uses AWS Lambda.
                 </p>
-
-                <a target="_blank" href="https://remanbalak.github.io/meet/">
+                <a
+                  href="https://remanbalak.github.io/meet/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -385,13 +393,14 @@
                     >
                   </button>
                 </a>
-                <a href="https://github.com/RemanBalak/MeetUp" target="_blank">
+                <a
+                  href="https://github.com/RemanBalak/MeetUp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -406,33 +415,31 @@
             </div>
           </div>
 
+          <!-- RecipeHub -->
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card light-mode">
               <img
                 src="assets/img/recipehub-home.png"
                 class="card-img-top"
-                alt="Image of RecipeHub mainpage"
+                alt="Image of RecipeHub main page"
               />
               <div class="card-body">
                 <h4 class="card-title">RecipeHub</h4>
                 <p class="card-text">
                   RecipeHub, a Python and Django web app, simplifies recipe
-                  discovery, creation, and viewing Admins have access to a
+                  discovery, creation, and viewing. Admins have access to a
                   powerful dashboard for managing the recipe database. The
                   application is securely hosted on Heroku, with its data stored
                   in an SQL database.
                 </p>
-
                 <a
                   href="https://recipehub-f3766f54da15.herokuapp.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -446,48 +453,11 @@
                 <a
                   href="https://github.com/RemanBalak/recipe-app"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z"></path>
-                        <path
-                          fill="currentColor"
-                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                        ></path>
-                      </svg>
-                      See Project code</span
-                    >
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card light-mode">
-              <img
-                src="assets/img/chatapp-image.png"
-                class="card-img-top"
-                alt="Image ChatApp homescreen"
-              />
-              <div class="card-body">
-                <h4 class="card-title">Chatify</h4>
-                <p class="card-text">
-                  A chat app for mobile devices built with React-Native. It
-                  provides users with a chat interface where they can
-                  send/receive text messages and images as well as share their
-                  location.
-                </p>
-                <a href="https://github.com/RemanBalak/Chatify" target="_blank">
-                  <button class="cssbuttons-io">
-                    <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -502,13 +472,51 @@
             </div>
           </div>
 
+          <!-- Chatify -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card light-mode">
+              <img
+                src="assets/img/chatapp-image.png"
+                class="card-img-top"
+                alt="Image of Chatify home screen"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Chatify</h4>
+                <p class="card-text">
+                  A chat app for mobile devices built with React-Native. It
+                  provides users with a chat interface where they can
+                  send/receive text messages and images as well as share their
+                  location.
+                </p>
+                <a
+                  href="https://github.com/RemanBalak/Chatify"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button class="cssbuttons-io">
+                    <span
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        ></path>
+                      </svg>
+                      See Project code</span
+                    >
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Movie API -->
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card light-mode">
               <img
                 src="assets/img/movie-api.png"
                 class="card-img-top movieapi-image"
-                alt="Image of movie
-              API"
+                alt="Image of Movie API"
               />
               <div class="card-body">
                 <h4 class="card-title">Movie API</h4>
@@ -522,13 +530,11 @@
                 <a
                   href="https://github.com/RemanBalak/movie_api-main"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <button class="cssbuttons-io">
                     <span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 24 24"
-                      >
+                      ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill="none" d="M0 0h24v24H0z"></path>
                         <path
                           fill="currentColor"
@@ -554,8 +560,6 @@
             name="contact"
             method="POST"
             class="contact_form"
-            data-netlify="true"
-            data-netlify-recaptcha="true"
             onsubmit="return validateForm()"
           >
             <div class="input-container">
@@ -588,8 +592,6 @@
               <textarea
                 name="text"
                 placeholder="Message"
-                id=""
-                cols="0"
                 rows="10"
                 class="contact_input"
                 required
@@ -609,25 +611,31 @@
         </div>
       </section>
 
-      <!-- footer -->
+      <!-- FOOTER -->
       <footer class="footer">
         <div class="footer_social">
           <a
             href="https://www.linkedin.com/in/remanbalak/"
             target="_blank"
+            rel="noopener noreferrer"
             class="footer_icon"
+            aria-label="LinkedIn"
             ><i class="bx bxl-linkedin"></i
           ></a>
           <a
             href="https://github.com/RemanBalak"
             target="_blank"
+            rel="noopener noreferrer"
             class="footer_icon"
+            aria-label="GitHub"
             ><i class="bx bxl-github"></i
           ></a>
           <a
             href="https://www.reddit.com/user/remanbalak"
             target="_blank"
+            rel="noopener noreferrer"
             class="footer_icon"
+            aria-label="Reddit"
             ><i class="bx bxl-reddit"></i
           ></a>
         </div>
@@ -637,16 +645,16 @@
       </footer>
     </main>
 
-    <!-- Scroll -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scroll (pinned version instead of "latest") -->
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
 
-    <!-- Autowriter -->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- Autowriter (pinned version instead of "latest") -->
+    <script src="https://unpkg.com/typewriter-effect@2.22.0/dist/core.js"></script>
 
     <!-- Particles -->
-    <script src="./assets/js/particles.js"></script>
+    <script src="assets/js/particles.js"></script>
 
     <!-- Javascript -->
-    <script src=" /assets/js/app.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>
