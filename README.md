@@ -8,4 +8,4 @@ Made using:
 - CSS
 - Javascript
 
-Live site [here](https://remanbalakdev.com/)
+Live site [here](https://remanbalak.github.io/Portfolio-Website/)
